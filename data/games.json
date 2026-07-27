@@ -1,5 +1,16 @@
 [
   {
+    "id": 11,
+    "slug": "survivor-roguelite",
+    "title": "吸血鬼幸存者",
+    "category": "action",
+    "thumbnail": "/games/survivor/docs/hero.svg",
+    "gif": "/games/survivor/docs/hero.svg",
+    "url": "/games/survivor/index.html",
+    "description": "零依赖HTML5肉鸽生存游戏！10种武器×10种被动，3个关卡+Boss战，中英双语，支持键盘/触屏/手柄。杀敌升级，存活更久！",
+    "featured": true
+  },
+  {
     "id": 1,
     "slug": "tetris-classic",
     "title": "经典俄罗斯方块",

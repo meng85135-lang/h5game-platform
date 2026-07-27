@@ -85,7 +85,7 @@ export default function MasonryGallery({ games, columns = 4 }: MasonryGalleryPro
 
   // 获取带有basePath的图片路径
   const getImagePath = (path: string) => {
-    const basePath = process.env.NODE_ENV === 'production' ? '/H5Game' : ''
+    const basePath = process.env.NODE_ENV === 'production' ? '/h5game-platform' : ''
     const normalizedPath = path.startsWith('/') ? path : `/${path}`
     return `${basePath}${normalizedPath}`
   }

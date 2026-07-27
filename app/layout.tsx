@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import DonationBanner from '@/components/DonationBanner'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -33,33 +34,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
-      <head>
-        {/* Google AdSense */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxx"
-          crossOrigin="anonymous"
-        ></script>
-        
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'GA_MEASUREMENT_ID');
-            `,
-          }}
-        />
-      </head>
+      
       <body className={`${inter.className} bg-background text-white min-h-screen flex flex-col`}>
         <LanguageProvider>
           <Navbar />
+          <DonationBanner />
           <main className="flex-1">
             {children}
           </main>
