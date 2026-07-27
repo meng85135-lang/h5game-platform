@@ -41,24 +41,22 @@ export default function DonationBanner() {
                 扫描二维码打赏，帮助我们维持服务器和持续开发
               </p>
 
-              {/* Placeholder QR codes - replace with real ones */}
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <div className="bg-white rounded-xl p-3">
                   <div className="bg-gray-200 rounded-lg aspect-square flex items-center justify-center">
                     <span className="text-gray-500 text-xs text-center">
                       微信<br/>收款码<br/>
-                      <span className="text-gray-400">(替换为你的)</span>
+                      <span className="text-gray-400">(请提供)</span>
                     </span>
                   </div>
                   <p className="text-gray-700 text-xs mt-2 text-center">微信支付</p>
                 </div>
                 <div className="bg-white rounded-xl p-3">
-                  <div className="bg-gray-200 rounded-lg aspect-square flex items-center justify-center">
-                    <span className="text-gray-500 text-xs text-center">
-                      支付宝<br/>收款码<br/>
-                      <span className="text-gray-400">(替换为你的)</span>
-                    </span>
-                  </div>
+                  <img
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/alipay-qr.jpg`}
+                    alt="支付宝收款码"
+                    className="w-full rounded-lg"
+                  />
                   <p className="text-gray-700 text-xs mt-2 text-center">支付宝</p>
                 </div>
               </div>
